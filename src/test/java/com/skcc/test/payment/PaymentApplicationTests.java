@@ -1,11 +1,11 @@
-package com.skcc.tes.settlement;
+package com.skcc.test.payment;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
-class SettlementApplicationTests {
+@SpringBootTest	
+class PaymentApplicationTests {
 
 	@Test
 	void contextLoads() {

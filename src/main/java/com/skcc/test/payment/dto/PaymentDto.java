@@ -1,4 +1,4 @@
-package com.skcc.tes.settlement.dto;
+package com.skcc.test.payment.dto;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.*;
@@ -11,19 +11,19 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class SettlementDto {
+public class PaymentDto {
 
     Long id; // 관리 번호
 
     @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss", timezone = "Asia/Seoul")
-    LocalDateTime serviceDate;	// 서비스 일자
+    LocalDateTime serviceDate; // 서비스 일자
 
     @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss", timezone = "Asia/Seoul")
     LocalDateTime settlementDate;// 정산일자
 
-    String userId;	// 정산 받는 사용자 ID
+    String userId; // 정산 받는 사용자 ID
 
-    Integer amount;	// 정산 금액
+    Integer amount; // 정산 금액
 }
